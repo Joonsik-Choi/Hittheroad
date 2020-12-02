@@ -1,0 +1,33 @@
+{{>layout/header}}
+ <div class="col-lg-12 text-center">
+  <h2>로그인</h2>
+  <!--로그인 창-->
+  <div>
+   <label for="loginid">아이디</label><br />
+   <input type="text" id="loginId" name="loginId"><br />
+   <br />
+   <label for="loginpw">비밀번호</label><br />
+   <input type="password" id="loginPw" name="loginPw"><br />
+   <br />
+   <br />
+
+
+   <div>
+    <input id="login_btn" type="button" value="확인" /><br /><br />
+   </div>
+
+   <div class="search">
+    <p>아직 회원이 아니신가요?</p>
+    <a href="/sign_up">여기를 클릭하세요.</a>
+   </div>
+  </div>
+ </div>
+ <!-- Menu Toggle Script -->
+ <script>
+  $("#menu-toggle").click(function(e) {
+   e.preventDefault();
+   $("#wrapper").toggleClass("toggled");
+  });
+ </script>
+
+{{>layout/footer}}
